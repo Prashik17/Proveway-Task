@@ -1,0 +1,172 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+h1 {
+    color: #ff6584;
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+/* Box Container */
+.box-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+/* Box Styles */
+.box {
+    width: 100%;
+    border: 1px solid #f0f0f0;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 15px;
+    background-color: #fff;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+.box1{
+    width: 100%;
+    border: 3px solid #ff6584;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 15px;
+    background-color: #fff;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.most-popular {
+    border: 2px solid #ff6584;
+}
+
+.box-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.discount {
+    background-color: #ff6584;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: grey;
+    font-size: 14px;
+}
+
+.standard-price {
+    color: grey;
+    font-size: 12px;
+}
+
+.most-popular-tag {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: #ff6584;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 12px;
+}
+
+/* Content section */
+.content {
+    margin-top: 15px;
+    display: none;
+}
+
+.dropdown-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Center the items vertically */
+    font-weight: normal;
+    margin-bottom: 20px; /* Space between dropdown headers */
+}
+
+/* Dropdown styling */
+.dropdowns {
+    display: flex;
+    justify-content: flex-start; /* Align dropdowns to the start */
+    gap: 15px; /* Space between dropdown groups */
+}
+
+.dropdown-group {
+    display: flex;
+    flex-direction: column; /* Stack label and select vertically */
+}
+
+label {
+    margin-bottom: 5px; /* Space between label and select */
+    font-size: 14px;
+}
+
+/* Radio button hide */
+.radio-input {
+    display: none;
+}
+
+.radio-input:checked + .box-label .content {
+    display: block; /* Show content when checked */
+}
+
+/* Free delivery text */
+.free-delivery {
+    margin-top: 20px;
+    color: #4caf50;
+    font-size: 16px;
+}
+
+/* Total price */
+.total-price {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+/* Button styling */
+.add-to-cart {
+    background-color: #ff6584;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.add-to-cart:hover {
+    background-color: #e05e74;
+}
+
+.radio-buttons {
+    display: flex;
+    justify-content: space-between; /* Aligns the buttons in a row */
+    width: 100%; /* Full width of the container */
+    margin-bottom: 20px; /* Space below the radio buttons */
+}
+
+.radio-label {
+    cursor: pointer; /* Change cursor on hover */
+}
